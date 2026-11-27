@@ -11,12 +11,16 @@ Please check the [Upgrading Instructions](UPGRADE.md) when upgrading to a newer 
 ----------------------------
 
 ### Added
+- Support for PHP 8.2+
+- Updated min supported PHP version to 8.2
 
 ### Changed
+- Upgraded league/oauth2-server to v9
 
 ### Deprecated
 
 ### Removed
+- Support for pre PHP 8.2 versions
 
 ### Fixed
 
