@@ -59,7 +59,7 @@ class Oauth2AuthCode extends base\Oauth2AuthCode implements Oauth2AuthCodeInterf
     /**
      * @inheritDoc
      */
-    public function getRedirectUri()
+    public function getRedirectUri(): ?string
     {
         return $this->redirect_uri;
     }
@@ -67,7 +67,7 @@ class Oauth2AuthCode extends base\Oauth2AuthCode implements Oauth2AuthCodeInterf
     /**
      * @inheritDoc
      */
-    public function setRedirectUri($uri)
+    public function setRedirectUri(string $uri): void
     {
         $this->redirect_uri = $uri;
     }

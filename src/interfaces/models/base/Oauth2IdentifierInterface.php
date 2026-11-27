@@ -24,7 +24,7 @@ interface Oauth2IdentifierInterface
      * @param string $identifier
      * @since 1.0.0
      */
-    public function setIdentifier($identifier);
+    public function setIdentifier(string $identifier): void;
 
     /**
      * Check if there already is an existing model with the same identifier.

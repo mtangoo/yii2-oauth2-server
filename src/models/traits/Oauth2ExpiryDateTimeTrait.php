@@ -9,7 +9,7 @@ trait Oauth2ExpiryDateTimeTrait
     /**
      * @inheritDoc
      */
-    public function getExpiryDateTime()
+    public function getExpiryDateTime(): \DateTimeImmutable
     {
         return $this->expiry_date_time;
     }
@@ -17,7 +17,7 @@ trait Oauth2ExpiryDateTimeTrait
     /**
      * @inheritDoc
      */
-    public function setExpiryDateTime(DateTimeImmutable $dateTime)
+    public function setExpiryDateTime(DateTimeImmutable $dateTime): void
     {
         $this->expiry_date_time = $dateTime;
     }

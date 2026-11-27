@@ -35,7 +35,7 @@ trait Oauth2EntityIdentifierTrait
     /**
      * @inheritDoc
      */
-    public function setIdentifier($identifier)
+    public function setIdentifier(string $identifier): void
     {
         /** @var ActiveRecordInterface&$this $this */
         $this->setAttribute('identifier', $identifier);

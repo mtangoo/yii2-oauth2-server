@@ -18,12 +18,12 @@ interface Oauth2UserIdentifierInterface
      *
      * @param string|int|null $identifier The identifier of the user
      */
-    public function setUserIdentifier($identifier);
+    public function setUserIdentifier(string $identifier): void;
 
     /**
      * Get the token user's identifier.
      *
      * @return string|int|null
      */
-    public function getUserIdentifier();
+    public function getUserIdentifier(): ?string;
 }

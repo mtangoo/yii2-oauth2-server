@@ -42,12 +42,12 @@ interface Oauth2AccessTokenInterface extends
      * @inheritDoc
      * @return Oauth2ClientInterface
      */
-    public function getClient();
+    public function getClient(): \League\OAuth2\Server\Entities\ClientEntityInterface;
 
     /**
      * @inheritDoc
      * @return Oauth2ScopeInterface
      */
-    public function getScopes();
+    public function getScopes(): array;
     # endregion
 }

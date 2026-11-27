@@ -25,7 +25,7 @@ trait Oauth2ScopesRelationTrait
     /**
      * @inheritDoc
      */
-    public function setScopes($scopes)
+    public function setScopes(array $scopes): void
     {
         foreach ($scopes as $scope) {
             if (!($scope instanceof Oauth2ScopeInterface)) {
@@ -40,7 +40,7 @@ trait Oauth2ScopesRelationTrait
      * @return Oauth2ScopeInterface[]
      * @since 1.0.0
      */
-    public function getScopes()
+    public function getScopes(): array
     {
         return $this->scopesRelation;
     }
@@ -48,7 +48,7 @@ trait Oauth2ScopesRelationTrait
     /**
      * @inheritDoc
      */
-    public function addScope(ScopeEntityInterface $scope)
+    public function addScope(ScopeEntityInterface $scope): void
     {
         $scopes = $this->scopesRelation;
         $scopes[] = $scope;

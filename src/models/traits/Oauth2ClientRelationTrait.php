@@ -46,7 +46,7 @@ trait Oauth2ClientRelationTrait
     /**
      * @inheritDoc
      */
-    public function setClient(ClientEntityInterface $client)
+    public function setClient(ClientEntityInterface $client): void
     {
         if (!($client instanceof Oauth2ClientInterface)) {
             throw new InvalidConfigException(get_class($client) . ' must implement ' . Oauth2ClientInterface::class);
@@ -61,7 +61,7 @@ trait Oauth2ClientRelationTrait
      * @return Oauth2ClientInterface
      * @since 1.0.0
      */
-    public function getClient()
+    public function getClient(): ClientEntityInterface
     {
         return $this->clientRelation;
     }

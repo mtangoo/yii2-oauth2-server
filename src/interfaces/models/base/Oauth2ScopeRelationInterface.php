@@ -12,7 +12,7 @@ interface Oauth2ScopeRelationInterface
      * @param Oauth2ScopeInterface[] $scopes
      * @since 1.0.0
      */
-    public function setScopes($scopes);
+    public function setScopes(array $scopes): void;
 
     /**
      * Get the scopes relation.
@@ -33,6 +33,6 @@ interface Oauth2ScopeRelationInterface
      * @inheritDoc
      * @return Oauth2ScopeInterface[]
      */
-    public function getScopes();
+    public function getScopes(): array;
     # endregion
 }

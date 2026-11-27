@@ -30,6 +30,6 @@ interface Oauth2AuthCodeInterface extends
      * @inheritDoc
      * @return Oauth2ClientInterface
      */
-    public function getClient();
+    public function getClient(): \League\OAuth2\Server\Entities\ClientEntityInterface;
     # endregion
 }

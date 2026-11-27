@@ -87,7 +87,7 @@ class Oauth2RefreshToken extends base\Oauth2RefreshToken implements Oauth2Refres
      * @inheritDoc
      * @throws InvalidConfigException
      */
-    public function setAccessToken(AccessTokenEntityInterface $accessToken)
+    public function setAccessToken(AccessTokenEntityInterface $accessToken): void
     {
         if (!($accessToken instanceof Oauth2AccessTokenInterface)) {
             throw new InvalidConfigException(
@@ -102,7 +102,7 @@ class Oauth2RefreshToken extends base\Oauth2RefreshToken implements Oauth2Refres
     /**
      * @inheritDoc
      */
-    public function getAccessToken()
+    public function getAccessToken(): \League\OAuth2\Server\Entities\AccessTokenEntityInterface
     {
         return $this->accessTokenRelation;
     }

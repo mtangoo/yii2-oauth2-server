@@ -41,6 +41,6 @@ interface Oauth2RefreshTokenInterface extends
      * @inheritDoc
      * @return Oauth2AccessTokenInterface
      */
-    public function getAccessToken();
+    public function getAccessToken(): \League\OAuth2\Server\Entities\AccessTokenEntityInterface;
     # endregion
 }

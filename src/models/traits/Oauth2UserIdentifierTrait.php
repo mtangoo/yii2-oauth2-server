@@ -25,15 +25,15 @@ trait Oauth2UserIdentifierTrait
     /**
      * @inheritDoc
      */
-    public function getUserIdentifier()
+    public function getUserIdentifier(): ?string
     {
-        return $this->user_id;
+        return $this->user_id === null ? null : (string) $this->user_id;
     }
 
     /**
      * @inheritDoc
      */
-    public function setUserIdentifier($identifier)
+    public function setUserIdentifier(string $identifier): void
     {
         $this->user_id = $identifier;
     }
